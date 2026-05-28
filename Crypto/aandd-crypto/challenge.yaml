@@ -12,7 +12,6 @@ value: 0
 minScoreRate: 0.25
 difficulty: 5
 container:
-  containerImage: "gzctf/echo-http:test"
   exposePort: 80
   memoryLimit: 128
   cpuCount: 1

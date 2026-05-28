@@ -23,19 +23,28 @@ under each category folder.
   Solidity stub for Blockchain, …). The `provide:` field in the yaml
   points at it so GZCTF serves the file to players.
 
-- **6 container-type challenges have a real `./src/Dockerfile`** — leaving
-  `containerImage:` empty in the yaml so GZCTF's auto-build pipeline
-  picks them up (`ChallengeImportService.ResolveBuildIntent`):
-    - `Web/web-service` — alpine + busybox httpd
-    - `Crypto/crypto-per-team-box` — python XOR oracle
-    - `Pwn/and-pwn` — A&D socat service that serves /flag
-    - `Misc/koth-misc-hill` — KotH hill with PUT /koth/king
-    - `Mobile/mobile-service` — nginx APK-landing page
-    - `AI/ai-per-team-box` — fake LLM prompt gate
-  These exercise the build pipeline end-to-end on import (you'll see
-  BuildStatus go Queued → Building → Built in /admin/games/<id>/challenges).
+- **All 12 AttackDefense challenges** (one per category) have a real
+  `./src/Dockerfile` with a category-themed vulnerable service — every
+  one reads `/flag` at request time so the platform's per-tick flag
+  rotation takes effect. Surfaces vary: Crypto = AES-CTR nonce reuse,
+  Web = path-traversal alias, Mobile = hardcoded creds, AI = redact-list
+  bypass, Forensics = metadata leak, Hardware = undocumented UART cmd,
+  Pentest = nginx wildcard alias, etc.
 
-- **The remaining 60 container challenges** reuse `gzctf/echo-http:test`
+- **+5 more buildable showcase challenges** (one per category sampler)
+  to exercise the build path for non-A&D types:
+    - `Web/web-service` (StaticContainer) — alpine + busybox httpd
+    - `Crypto/crypto-per-team-box` (DynamicContainer) — python XOR oracle
+    - `Misc/koth-misc-hill` (KingOfTheHill) — hill with PUT /koth/king
+    - `Mobile/mobile-service` (StaticContainer) — nginx APK-landing page
+    - `AI/ai-per-team-box` (DynamicContainer) — fake LLM prompt gate
+
+  All 17 buildable rows leave `containerImage:` empty so
+  `ChallengeImportService.ResolveBuildIntent` resolves to BuildNeeded
+  (BuildStatus goes Queued → Building → Built on import; ~30s each on
+  alpine; visible in /admin/games/<id>/challenges).
+
+- **The remaining 55 container challenges** reuse `gzctf/echo-http:test`
   (a published demo image) so they stand up without a build.
 
 Regenerated from `scripts/seed/gen-mix-repo.py` in the GZCTF repo.
