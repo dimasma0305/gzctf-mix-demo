@@ -1,0 +1,13 @@
+# Reverse Per-Team Drop
+# category: Reverse
+# type: DynamicAttachment
+
+Tiny ELF disassembly (sample):
+
+0x401000  push   rbp
+0x401001  mov    rbp,rsp
+0x401004  mov    eax,0xdeadbeef
+0x401009  cmp    edi,eax
+0x40100b  jne    0x401020   ; fail path
+
+# expected flag pattern: FINDIT{dynamicattachment_reverse_[team-specific]}

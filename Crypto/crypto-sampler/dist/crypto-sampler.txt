@@ -1,0 +1,12 @@
+# Crypto Sampler
+# category: Crypto
+# type: StaticAttachment
+
+Caesar-shifted ciphertext (shift 7):
+
+MPUKPA{jypwav_zhtwsly_haaylyh} 
+
+Modulus: 0xc0ffee...
+Encrypted blob: hex...
+
+# expected flag pattern: FINDIT{staticattachment_crypto_static}

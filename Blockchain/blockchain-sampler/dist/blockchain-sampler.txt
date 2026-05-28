@@ -1,0 +1,14 @@
+# Blockchain Sampler
+# category: Blockchain
+# type: StaticAttachment
+
+Solidity contract source:
+
+pragma solidity ^0.8.20;
+contract Vault {
+  bytes32 private flag;
+  function deposit() external payable {}
+  function withdraw() external { /* TODO: access control */ }
+}
+
+# expected flag pattern: FINDIT{staticattachment_blockchain_static}

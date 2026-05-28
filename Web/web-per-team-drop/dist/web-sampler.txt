@@ -1,0 +1,9 @@
+# Web Per-Team Drop
+# category: Web
+# type: DynamicAttachment
+
+Source bundle for the web app. Inspect for the auth-bypass primitive.
+
+Endpoints: /login, /admin, /flag. Cookie 'role' is parsed unsafely.
+
+# expected flag pattern: FINDIT{dynamicattachment_web_[team-specific]}

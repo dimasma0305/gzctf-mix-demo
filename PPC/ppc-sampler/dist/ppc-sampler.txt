@@ -1,0 +1,12 @@
+# PPC Sampler
+# category: PPC
+# type: StaticAttachment
+
+Input/output spec:
+
+Input:  n (1 <= n <= 1e6), then n integers up to 1e9.
+Output: count of distinct subarrays whose XOR is a power of 2.
+Constraint: 1-second wall time on the judge.
+Sample input: 5\n1 2 3 4 5\nSample output: 6
+
+# expected flag pattern: FINDIT{staticattachment_ppc_static}

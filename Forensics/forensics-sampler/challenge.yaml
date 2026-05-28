@@ -13,3 +13,4 @@ minScoreRate: 0.25
 difficulty: 5
 flags:
   - "FINDIT{staticattachment_forensics_static}"
+provide: "./dist/forensics-sampler.txt"

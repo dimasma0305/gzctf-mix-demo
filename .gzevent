@@ -8,6 +8,10 @@ content: |
   This event is a coverage matrix: every ChallengeType crossed with every ChallengeCategory,
   one challenge each. The challenges themselves are placeholder/showcase entries so the
   player scoreboard, kind switcher, and category bands render with content in every cell.
+
+  Six of the container challenges are FULLY BUILT (have a real ./src/Dockerfile so GZCTF
+  auto-builds them); all 24 attachment challenges ship a real downloadable file. The rest
+  reuse the gzctf/echo-http:test demo image so they stand up immediately on any deploy.
 acceptWithoutReview: true
 practiceMode: true
 teamMemberCountLimit: 0

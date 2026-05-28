@@ -1,0 +1,15 @@
+# Hardware Sampler
+# category: Hardware
+# type: StaticAttachment
+
+Logic-analyzer trace (CSV, decoded UART):
+
+time_us,rx,tx
+0,0,1
+100,1,1
+200,0,1   # start bit
+300,1,0   # 'h'
+...
+Bus: 115200 8N1 — decode the stream to extract a hidden string.
+
+# expected flag pattern: FINDIT{staticattachment_hardware_static}

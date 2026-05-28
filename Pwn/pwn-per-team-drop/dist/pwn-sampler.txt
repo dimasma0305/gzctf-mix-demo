@@ -1,0 +1,14 @@
+# Pwn Per-Team Drop
+# category: Pwn
+# type: DynamicAttachment
+
+Vulnerable C source (Dockerfile + binary in the real challenge):
+
+```c
+#include <stdio.h>
+int main(){ char buf[64]; gets(buf); printf(buf); return 0; }
+```
+
+Compile with: gcc -fno-stack-protector -no-pie -o pwn pwn.c
+
+# expected flag pattern: FINDIT{dynamicattachment_pwn_[team-specific]}

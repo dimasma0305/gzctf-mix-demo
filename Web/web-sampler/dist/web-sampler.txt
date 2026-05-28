@@ -1,0 +1,9 @@
+# Web Sampler
+# category: Web
+# type: StaticAttachment
+
+Source bundle for the web app. Inspect for the auth-bypass primitive.
+
+Endpoints: /login, /admin, /flag. Cookie 'role' is parsed unsafely.
+
+# expected flag pattern: FINDIT{staticattachment_web_static}

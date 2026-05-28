@@ -1,0 +1,9 @@
+# Misc Per-Team Drop
+# category: Misc
+# type: DynamicAttachment
+
+Rot13'd hint follows — decode to find the flag.
+
+GVAQVG{zvfp_fnzcyre_ng_jbex} (real flag is per-challenge; this is a sample)
+
+# expected flag pattern: FINDIT{dynamicattachment_misc_[team-specific]}

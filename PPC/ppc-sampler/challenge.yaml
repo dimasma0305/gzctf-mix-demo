@@ -13,3 +13,4 @@ minScoreRate: 0.25
 difficulty: 5
 flags:
   - "FINDIT{staticattachment_ppc_static}"
+provide: "./dist/ppc-sampler.txt"

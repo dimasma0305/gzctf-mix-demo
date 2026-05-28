@@ -1,0 +1,12 @@
+# Crypto Per-Team Drop
+# category: Crypto
+# type: DynamicAttachment
+
+Caesar-shifted ciphertext (shift 7):
+
+MPUKPA{jypwav_zhtwsly_haaylyh} 
+
+Modulus: 0xc0ffee...
+Encrypted blob: hex...
+
+# expected flag pattern: FINDIT{dynamicattachment_crypto_[team-specific]}

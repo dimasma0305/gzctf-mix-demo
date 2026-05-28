@@ -1,0 +1,9 @@
+# Misc Sampler
+# category: Misc
+# type: StaticAttachment
+
+Rot13'd hint follows — decode to find the flag.
+
+GVAQVG{zvfp_fnzcyre_ng_jbex} (real flag is per-challenge; this is a sample)
+
+# expected flag pattern: FINDIT{staticattachment_misc_static}

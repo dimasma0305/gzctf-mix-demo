@@ -1,0 +1,14 @@
+# Mobile Sampler
+# category: Mobile
+# type: StaticAttachment
+
+AndroidManifest.xml excerpt (APK redacted):
+
+<activity android:name='.MainActivity' android:exported='true'>
+  <intent-filter>
+    <action android:name='android.intent.action.VIEW'/>
+    <data android:scheme='gzctf' android:host='flag'/>
+  </intent-filter>
+</activity>
+
+# expected flag pattern: FINDIT{staticattachment_mobile_static}

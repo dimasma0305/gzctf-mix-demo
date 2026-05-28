@@ -1,0 +1,11 @@
+# Forensics Sampler
+# category: Forensics
+# type: StaticAttachment
+
+PCAP summary (extracted with tshark):
+
+00:00:00.001  TCP  10.0.0.5:443 -> 10.0.0.10:51200  TLS Client Hello SNI=evil.example
+00:00:00.123  TCP  10.0.0.5:443 -> 10.0.0.10:51200  Application Data 4096 bytes
+...look at the raw PCAP for the smuggled token...
+
+# expected flag pattern: FINDIT{staticattachment_forensics_static}

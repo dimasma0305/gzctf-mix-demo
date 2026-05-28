@@ -1,0 +1,14 @@
+# Blockchain Per-Team Drop
+# category: Blockchain
+# type: DynamicAttachment
+
+Solidity contract source:
+
+pragma solidity ^0.8.20;
+contract Vault {
+  bytes32 private flag;
+  function deposit() external payable {}
+  function withdraw() external { /* TODO: access control */ }
+}
+
+# expected flag pattern: FINDIT{dynamicattachment_blockchain_[team-specific]}

@@ -12,3 +12,4 @@ value: 200
 minScoreRate: 0.25
 difficulty: 5
 flagTemplate: "FINDIT{dynamicattachment_blockchain_[GUID]}"
+provide: "./dist/blockchain-sampler.txt"
