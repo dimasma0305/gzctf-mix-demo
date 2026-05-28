@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/dimasma0305/gzcli/refs/heads/main/internal/template/templates/others/ctf-template/.gzctf/challenge.schema.yaml
+
+name: "Hardware Sampler"
+author: "GZCTF Mix Demo"
+description: |
+  Embedded / firmware / hardware-adjacent.
+  
+  Download the file; the same flag applies to every team.
+category: "Hardware"
+type: "StaticAttachment"
+value: 200
+minScoreRate: 0.25
+difficulty: 5
+flags:
+  - "FINDIT{staticattachment_hardware_static}"

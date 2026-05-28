@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/dimasma0305/gzcli/refs/heads/main/internal/template/templates/others/ctf-template/.gzctf/challenge.schema.yaml
+
+name: "Misc Per-Team Drop"
+author: "GZCTF Mix Demo"
+description: |
+  A bit of everything — read the prompt carefully.
+  
+  Per-team file with a per-team flag.
+category: "Misc"
+type: "DynamicAttachment"
+value: 200
+minScoreRate: 0.25
+difficulty: 5
+flagTemplate: "FINDIT{dynamicattachment_misc_[GUID]}"

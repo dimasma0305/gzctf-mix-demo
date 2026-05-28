@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/dimasma0305/gzcli/refs/heads/main/internal/template/templates/others/ctf-template/.gzctf/gzevent.schema.yaml
+title: "GZCTF — Type×Category Mix Demo"
+start: "2026-05-28T00:00:00Z"
+end:   "2026-06-30T00:00:00Z"
+hidden: false
+summary: "Showcase event with one challenge per (type, category) cell — 72 total — wired up via repo-binding."
+content: |
+  This event is a coverage matrix: every ChallengeType crossed with every ChallengeCategory,
+  one challenge each. The challenges themselves are placeholder/showcase entries so the
+  player scoreboard, kind switcher, and category bands render with content in every cell.
+acceptWithoutReview: true
+practiceMode: true
+teamMemberCountLimit: 0
+containerCountLimit: 5
+bloodBonus: 50
+ad:
+  tickSeconds: 60
+  flagLifetimeTicks: 5
+  warmupSeconds: 60
+  resetCooldownMinutes: 5

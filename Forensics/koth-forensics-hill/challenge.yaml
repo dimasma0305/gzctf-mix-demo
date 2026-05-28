@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/dimasma0305/gzcli/refs/heads/main/internal/template/templates/others/ctf-template/.gzctf/challenge.schema.yaml
+
+name: "KotH — Forensics Hill"
+author: "GZCTF Mix Demo"
+description: |
+  Recover artifacts from data / disk / memory / pcap.
+  
+  Single shared hill — race to plant your token in /koth/king.
+category: "Forensics"
+type: "KingOfTheHill"
+value: 0
+minScoreRate: 0.25
+difficulty: 5
+container:
+  containerImage: "gzctf/echo-http:test"
+  exposePort: 80
+  memoryLimit: 128
+  cpuCount: 1
+  storageLimit: 256

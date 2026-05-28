@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/dimasma0305/gzcli/refs/heads/main/internal/template/templates/others/ctf-template/.gzctf/challenge.schema.yaml
+
+name: "Mobile Service"
+author: "GZCTF Mix Demo"
+description: |
+  Android / iOS app challenge.
+  
+  Shared service container — same target for every team.
+category: "Mobile"
+type: "StaticContainer"
+value: 200
+minScoreRate: 0.25
+difficulty: 5
+flags:
+  - "FINDIT{staticcontainer_mobile_static}"
+container:
+  containerImage: "gzctf/echo-http:test"
+  exposePort: 80
+  memoryLimit: 128
+  cpuCount: 1
+  storageLimit: 256

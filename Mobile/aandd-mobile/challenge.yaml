@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/dimasma0305/gzcli/refs/heads/main/internal/template/templates/others/ctf-template/.gzctf/challenge.schema.yaml
+
+name: "A&D — Mobile"
+author: "GZCTF Mix Demo"
+description: |
+  Android / iOS app challenge.
+  
+  Live A&D — patch your team's container, attack the others.
+category: "Mobile"
+type: "AttackDefense"
+value: 0
+minScoreRate: 0.25
+difficulty: 5
+container:
+  containerImage: "gzctf/echo-http:test"
+  exposePort: 80
+  memoryLimit: 128
+  cpuCount: 1
+  storageLimit: 256
+ad:
+  allowEgress: true
+  allowSelfReset: true

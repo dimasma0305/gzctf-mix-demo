@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/dimasma0305/gzcli/refs/heads/main/internal/template/templates/others/ctf-template/.gzctf/challenge.schema.yaml
+
+name: "Mobile Per-Team Box"
+author: "GZCTF Mix Demo"
+description: |
+  Android / iOS app challenge.
+  
+  Per-team container with a per-team flag.
+category: "Mobile"
+type: "DynamicContainer"
+value: 200
+minScoreRate: 0.25
+difficulty: 5
+flagTemplate: "FINDIT{dynamiccontainer_mobile_[GUID]}"
+container:
+  containerImage: "gzctf/echo-http:test"
+  exposePort: 80
+  memoryLimit: 128
+  cpuCount: 1
+  storageLimit: 256
