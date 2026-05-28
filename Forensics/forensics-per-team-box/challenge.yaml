@@ -8,9 +8,6 @@ description: |
   Per-team container with a per-team flag.
 category: "Forensics"
 type: "DynamicContainer"
-value: 200
-minScoreRate: 0.25
-difficulty: 5
 flagTemplate: "FINDIT{dynamiccontainer_forensics_[GUID]}"
 container:
   containerImage: "gzctf/echo-http:test"

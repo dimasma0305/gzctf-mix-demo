@@ -8,8 +8,5 @@ description: |
   Per-team file with a per-team flag.
 category: "Pwn"
 type: "DynamicAttachment"
-value: 200
-minScoreRate: 0.25
-difficulty: 5
 flagTemplate: "FINDIT{dynamicattachment_pwn_[GUID]}"
 provide: "./dist/pwn-sampler.txt"

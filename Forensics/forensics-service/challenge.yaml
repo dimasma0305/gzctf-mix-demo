@@ -8,9 +8,6 @@ description: |
   Shared service container — same target for every team.
 category: "Forensics"
 type: "StaticContainer"
-value: 200
-minScoreRate: 0.25
-difficulty: 5
 flags:
   - "FINDIT{staticcontainer_forensics_static}"
 container:

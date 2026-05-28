@@ -8,9 +8,6 @@ description: |
   Download the file; the same flag applies to every team.
 category: "Web"
 type: "StaticAttachment"
-value: 200
-minScoreRate: 0.25
-difficulty: 5
 flags:
   - "FINDIT{staticattachment_web_static}"
 provide: "./dist/web-sampler.txt"

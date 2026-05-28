@@ -8,9 +8,6 @@ description: |
   Live A&D — patch your team's container, attack the others.
 category: "AI"
 type: "AttackDefense"
-value: 0
-minScoreRate: 0.25
-difficulty: 5
 container:
   exposePort: 80
   memoryLimit: 128

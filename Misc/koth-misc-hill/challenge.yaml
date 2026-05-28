@@ -8,9 +8,6 @@ description: |
   Single shared hill — race to plant your token in /koth/king.
 category: "Misc"
 type: "KingOfTheHill"
-value: 0
-minScoreRate: 0.25
-difficulty: 5
 container:
   exposePort: 80
   memoryLimit: 128

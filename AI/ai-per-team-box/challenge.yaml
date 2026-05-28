@@ -8,9 +8,6 @@ description: |
   Per-team container with a per-team flag.
 category: "AI"
 type: "DynamicContainer"
-value: 200
-minScoreRate: 0.25
-difficulty: 5
 flagTemplate: "FINDIT{dynamiccontainer_ai_[GUID]}"
 container:
   exposePort: 80
